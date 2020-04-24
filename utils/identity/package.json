@@ -1,0 +1,19 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CreateAdminUser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "fabric-ca-client": "^1.4.8",
+    "fabric-network": "^1.4.8",
+    "nconf": "^0.10.0",
+    "sjcl": "^1.0.8"
+  }
+}
