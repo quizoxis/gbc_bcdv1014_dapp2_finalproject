@@ -1,5 +1,5 @@
 /* *************************************************************
- * restrackerd.js                                              *
+ * server.js                                              *
  *  - Resource Guardian API Server                             *
  *
  *
@@ -41,7 +41,7 @@ app.use(function (req, res, next) {
 });
 
 // Server Startup Listening Port
-var server = app.listen(process.env.PORT || 3600, function () {
+var server = app.listen(process.env.PORT || 3466, function () {
   var port = server.address().port;
   console.log("Backend now active listening on port", port);
 });
@@ -277,8 +277,6 @@ async function verifyResTreeHash (clockTick, currTreeHash, currFTreeHash) {
 
 }
 
-
-// bRead ->
 /* *************************************************************
  * verifyResHash
  * - Compare current hash vale of a resource against stored hash
@@ -347,7 +345,7 @@ async function verifyResHash (resTreeHash,currResHash) {
 
 /* *************************************************************
  * /api/addhash
- * - Scans and caluculates hash of each resource and its tree
+ * - Scans and calculates hash of each resource and its tree
  *   structure. Then stores the result in state data.
  *
  * Parameters:
